@@ -6,7 +6,7 @@
 * Version  : 1.0
 * Author   : beingeorge
 * Support  : hello@beingeorge.com
-* 
+*
 ------------------*/
 
 
@@ -20,7 +20,7 @@
 4. Portfolio
 5. Service
 6. Testimonial
-7. Blog	
+7. Blog
 8. Contact and Map
 9. Footer
 10. Scroll to top
@@ -111,9 +111,10 @@ h2 {
 }
 
 h3 {
-	font-size: 13px;
+	font-size: 1.3rem;
 	letter-spacing: 1px;
 	margin: 0 0 5px;
+	padding-bottom: 2rem;
 }
 
 h4 {
@@ -309,7 +310,7 @@ textarea.form-control {
 .btn-custom-2.active {
 	background: #e9548d;
 	color: #fff;
-	box-shadow: 0px 10px 20px rgba(0,0,0,0.1) 
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.1)
 }
 
 .btn-custom-3 {
@@ -451,7 +452,7 @@ textarea.form-control {
 }
 
 .module-icon i {
-	transform: rotate(-45deg);	
+	transform: rotate(-45deg);
 }
 
 .module-title {
@@ -934,7 +935,7 @@ figure {
 	background: rgba(0,0,0,0.2);
 	bottom: 0;
 	left: 0;
-	opacity: 0; 
+	opacity: 0;
 	padding: 13px;
 	position: absolute;
 	right: 0;
@@ -982,6 +983,11 @@ figure {
 
 .list-items-container .list-item:hover figcaption {
 	opacity: 1;
+}
+
+.carousel-inner .carousel-item img {
+	width: 500px;
+	height: 325px;
 }
 
 /* Ajax portfolio */
@@ -1107,7 +1113,14 @@ figure {
 	font-size: 16px;
 }
 
+.module-title h3 {
+	font-size: 1.5rem;
+}
 
+li.list-inline-item i {
+	color: #e9548d;
+	font-size: 2rem;
+}
 /* ---------------------------------------------- /*
 *  6. Testimonial
 /* ---------------------------------------------- */
@@ -1507,7 +1520,7 @@ figure {
 	display: block;
 	text-align: center;
 	font-size: 14px;
-	color: rgba(255, 255, 255, 1);	
+	color: rgba(255, 255, 255, 1);
 }
 
 .social-links a:hover {
@@ -1709,7 +1722,7 @@ figure {
 	}
 
 	.side-image-text {
-		padding: 50px 15px 0; 
+		padding: 50px 15px 0;
 	}
 
 	.mouse-icon {
