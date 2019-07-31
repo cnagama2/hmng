@@ -111,9 +111,10 @@ h2 {
 }
 
 h3 {
-	font-size: 13px;
+	font-size: 1.3rem;
 	letter-spacing: 1px;
 	margin: 0 0 5px;
+	padding-bottom: 2rem;
 }
 
 h4 {
@@ -1112,7 +1113,14 @@ figure {
 	font-size: 16px;
 }
 
+.module-title h3 {
+	font-size: 1.5rem;
+}
 
+li.list-inline-item i {
+	color: #e9548d;
+	font-size: 2rem;
+}
 /* ---------------------------------------------- /*
 *  6. Testimonial
 /* ---------------------------------------------- */
