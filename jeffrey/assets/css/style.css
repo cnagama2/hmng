@@ -1121,6 +1121,11 @@ li.list-inline-item i {
 	color: #e9548d;
 	font-size: 2rem;
 }
+
+li.list-inline-item i:hover {
+	color: #cc9999;
+}
+
 /* ---------------------------------------------- /*
 *  6. Testimonial
 /* ---------------------------------------------- */
