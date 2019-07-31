@@ -1524,6 +1524,7 @@ li.list-inline-item i {
 }
 
 .social-links a:hover {
+	color:rgba(255, 255, 255, .5);
 }
 
 
