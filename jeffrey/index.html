@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Chikako N. - Personal Portfolio Template</title>
+	<title>Humming - Personal Portfolio </title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -30,6 +30,10 @@
 
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- formrun用スクリプト -->
+	<script src="https://sdk.form.run/js/v2/formrun.js"></script>
+
 </head>
 <body>
 
@@ -400,23 +404,38 @@
 
 				<div class="col-md-6 offset-md-3">
 
-					<form id="contact-form" action="#">
+					<form id="contact-form" class="formrun" action="https://form.run/api/v1/r/id2y4pt6tffjwdb4mis9pre8" method="post">
 						<div class="ajax-hidden">
 							<div class="form-group wow fadeInUp">
-								<label class="sr-only" for="c_name">Name</label>
-								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name" required>
+								<label class="sr-only" for="c_name">お名前</label>
+								<input type="text" id="c_name" class="form-control" name="お名前" placeholder="お名前" required>
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
-								<label class="sr-only" for="c_email">Email address</label>
-								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail" required>
+								<label class="sr-only" for="c_email">メールアドレス [必須]</label>
+								<input type="text" id="c_email" data-formrun-type="email" class="form-control" name="メールアドレス" placeholder="メールアドレス" data-formrun-required>
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
-								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message" required></textarea>
+								<textarea class="form-control" id="c_message" name="お問い合わせ" rows="7" placeholder="お問い合わせ内容" data-formrun-required></textarea>
+								<div data-formrun-show-if-error="お問い合わせ">お問い合わせ内容を入力してください</div>
 							</div>
 
-							<button type="submit" class="btn btn-block custom-btn wow fadeInUp" data-wow-delay=".3s">Send Message
+							<div>
+									<label>個人情報利用同意 [必須]</label>
+									<input type="checkbox" name="個人情報利用同意" data-formrun-required>
+									<div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+							</div>
+
+							<!-- ボット投稿をブロックするためのタグ -->
+							<div class="_formrun_gotcha">
+								<style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+								<label for="_formrun_gotcha">If you are a human, ignore this field</label>
+								<input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+							</div>
+
+							<button type="submit" class="btn btn-block custom-btn wow fadeInUp" data-wow-delay=".3s"
+							data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信
 							</button>
 						</div>
 						<div class="ajax-response"></div>
