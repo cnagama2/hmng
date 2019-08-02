@@ -181,7 +181,7 @@
 					<ul id="filter" class=" wow fadeInUp">
 						<li class="active" data-group="all">All</li>
 						<li data-group="slideshow">Slideshow</li>
-						<li data-group="video">Video</li>
+						<!-- <li data-group="video">Video</li> -->
 						<li data-group="image">Image</li>
 					</ul>
 
@@ -247,34 +247,34 @@
 		</li>
 
 	<li class="list-item" data-groups="all slideshow">
-			<figure>
-					<div id="slides_3" class="carousel slide" data-ride="carousel" data-interval="2000">
-						<ul class="carousel-indicators">
-							<li data-target="#slides_3" data-slide-to="0" class="active"></li>
-							<li data-target="#slides_3" data-slide-to="1"></li>
-							<li data-target="#slides_3" data-slide-to="2"></li>
-							<li data-target="#slides_3" data-slide-to="3"></li>
-						</ul>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="assets/images/site1-1.png">
-						</div>
-						<div class="carousel-item">
-							<img src="assets/images/site1-2.png">
-						</div>
-						<div class="carousel-item">
-							<img src="assets/images/site1-3.png">
+		<figure>
+				<div id="slides_3" class="carousel slide" data-ride="carousel" data-interval="2000">
+					<ul class="carousel-indicators">
+						<li data-target="#slides_3" data-slide-to="0" class="active"></li>
+						<li data-target="#slides_3" data-slide-to="1"></li>
+						<li data-target="#slides_3" data-slide-to="2"></li>
+						<li data-target="#slides_3" data-slide-to="3"></li>
+					</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="assets/images/site1-1.png">
 					</div>
 					<div class="carousel-item">
-							<img src="assets/images/site1-4.png">
+						<img src="assets/images/site1-2.png">
 					</div>
-					</div>
-					<figcaption><div class="caption-inner">
-							<h3 class="portfolio-item-title">オリジナル日記サイト(PHP)</h3>
-							<div class="portfolio-item-desc">Slideshow</div>
-						</div></figcaption>
+					<div class="carousel-item">
+						<img src="assets/images/site1-3.png">
 				</div>
-			</figure>
+				<div class="carousel-item">
+						<img src="assets/images/site1-4.png">
+				</div>
+				</div>
+				<figcaption><div class="caption-inner">
+						<h3 class="portfolio-item-title">オリジナル日記サイト(PHP)</h3>
+						<div class="portfolio-item-desc">Slideshow</div>
+					</div></figcaption>
+			</div>
+		</figure>
 			</li>
 
 
@@ -291,31 +291,31 @@
 		</figure>
 	</li>
 
-				<li class="list-item" data-groups="all video">
-					<figure>
-						<img src="assets/images/lp1-3.png" alt="p5">
-						<figcaption>
-							<a href="https://hidden-everglades-29049.herokuapp.com/" class="simple-ajax-popup"></a>
-							<div class="caption-inner">
-								<h3 class="portfolio-item-title">LP</h3>
-								<div class="portfolio-item-desc">Video</div>
-							</div>
-						</figcaption>
-					</figure>
-				</li>
+		<li class="list-item" data-groups="all image">
+			<figure>
+				<img src="assets/images/Bootstrap4.png" alt="p5">
+				<figcaption>
+				<a href="assets/images/Bootstrap4-1.png" class="simple-ajax-popup"></a>
+					<div class="caption-inner">
+						<h3 class="portfolio-item-title">LP</h3>
+						<div class="portfolio-item-desc">image</div>
+					</div>
+				</figcaption>
+			</figure>
+		</li>
 
-				<li class="list-item" data-groups="all video">
-					<figure>
-						<img src="assets/images/lp2-4.png" alt="p6">
-						<figcaption>
-							<a href="https://fierce-falls-64252.herokuapp.com/" class="simple-ajax-popup"></a>
-							<div class="caption-inner">
-								<h3 class="portfolio-item-title">LP</h3>
-								<div class="portfolio-item-desc">Video</div>
-							</div>
-						</figcaption>
-					</figure>
-				</li>
+		<li class="list-item" data-groups="all image">
+			<figure>
+				<img src="assets/images/lp2-1.png" alt="p6">
+				<figcaption>
+					<a href="assets/images/Nuno-long.png" class="simple-ajax-popup"></a>
+					<div class="caption-inner">
+						<h3 class="portfolio-item-title">LP</h3>
+						<div class="portfolio-item-desc">image</div>
+					</div>
+				</figcaption>
+			</figure>
+		</li>
 
 			</ul><!-- .projects-container -->
 
@@ -428,16 +428,17 @@
 						<div class="ajax-hidden">
 							<div class="form-group wow fadeInUp">
 								<label class="sr-only" for="c_name">お名前</label>
-								<input type="text" id="c_name" class="form-control" name="お名前" placeholder="お名前" required>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="お名前" required>
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
 								<label class="sr-only" for="c_email">メールアドレス [必須]</label>
-								<input type="text" id="c_email" data-formrun-type="email" class="form-control" name="メールアドレス" placeholder="メールアドレス" data-formrun-required>
+								<input type="text" id="c_email" data-formrun-type="email" class="form-control" name="c_email" placeholder="メールアドレス" data-formrun-required>
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
-								<textarea class="form-control" id="c_message" name="お問い合わせ" rows="7" placeholder="お問い合わせ内容" data-formrun-required></textarea>
+								<label class="sr-only" for="c_message">お問い合わせ内容</label>
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="お問い合わせ内容" data-formrun-required></textarea>
 								<div data-formrun-show-if-error="お問い合わせ">お問い合わせ内容を入力してください</div>
 							</div>
 
@@ -492,7 +493,7 @@
 					</ul>
 
 					<p class="copyright wow fadeInUp">
-						chikakoweb.com © 2019 All Rights Reserved.
+						Chikakoweb.com © 2019 All Rights Reserved.
 					</p>
 
 				</div>
