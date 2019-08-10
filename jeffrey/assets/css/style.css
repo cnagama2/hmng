@@ -391,6 +391,9 @@ textarea.form-control {
 	padding: 50px 0;
 }
 
+section#aboutme.module {
+ padding: 0;
+}
 .module-gray {
 	background:var(--point-color);
 }
