@@ -1296,7 +1296,7 @@ li.list-inline-item i:hover {
 	transition: all 0.4s ease-in-out 0s;
 	background: transparent;
 	color: #333;
-	max-width: 170px;
+	max-width: 200px;
 	margin: 15px auto;
 	z-index: 22;
 	text-align: center;
@@ -1304,6 +1304,11 @@ li.list-inline-item i:hover {
 	width: 100%;
 	border: none;
 	position: relative;
+}
+
+section#blog a.custom-btn {
+	text-transform: none;
+	max-width: 500px;
 }
 
 .custom-btn:after {
