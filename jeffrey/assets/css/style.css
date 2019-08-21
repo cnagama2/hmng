@@ -39,6 +39,8 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900);
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
+.wf-sawarabigothic { font-family: "Sawarabi Gothic"; }
+
 /* 色の一括設定 */
 :root {
 	--point-color:#d6c6af;
@@ -142,9 +144,9 @@ h6 {
 	font-weight: 400;
 }
 
-.profile li {
-	text-align:left;
-
+.profile p{
+	text-align:center;
+	font-family: 'M PLUS 1p', sans-serif;
 }
 /*** Reset border-radius ***/
 
@@ -1017,6 +1019,7 @@ figure {
 .carousel-inner .carousel-item img {
 	width: 500px;
 	height: 325px;
+	object-fit: cover;
 }
 
 /* Ajax portfolio */
