@@ -386,6 +386,34 @@ textarea.form-control {
 	margin-left: 6px;
 }
 
+.button_prep {
+	display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--point-color-line);
+  color: #fff;
+  font-size: 2rem;
+
+	height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  text-align: center;
+  padding: 80px 0 0 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#services {
+	position: relative;
+}
+
+.button_prep {
+	position: absolute;
+    top: 20px;
+    left: 20px;
+}
+}
+
 /* ---------------------------------------------- /*
 * Main
 /* ---------------------------------------------- */
@@ -997,7 +1025,7 @@ figure {
 }
 
 .caption-inner .portfolio-item-title {
-	color: #333;
+	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
 	text-transform: uppercase;
