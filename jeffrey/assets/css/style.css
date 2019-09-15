@@ -388,20 +388,21 @@ textarea.form-control {
 
 .button_prep {
 	display: inline-block;
-  padding: 10px 30px;
-  background-color: var(--point-color-line);
-  color: #fff;
-  font-size: 2rem;
+  padding: 5px 15px;
+  background-color: rgba(255,255,255,0.6);
+  color:var(--point-color-line);
+  font-size: 1.4rem;
 
 	height: 200px;
   width: 200px;
   border-radius: 100px;
   text-align: center;
-  padding: 80px 0 0 0;
+  padding: 50px 0 0 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 
 #services {
 	position: relative;

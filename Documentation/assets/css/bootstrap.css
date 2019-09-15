@@ -4219,7 +4219,7 @@ input[type="submit"].btn.btn-mini {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
   opacity: 1;
-  filter: alpha(opacity=100);
+  filter: alpha(opacity:100);
 }
 
 .tabs-stacked .open > a:hover,
